@@ -1,6 +1,6 @@
 {
-    "id": "io.supernova.style-dictionary",
-    "name": "Style Dictionary",
+    "id": "nds.style-dictionary",
+    "name": "NDS Style Dictionary",
     "description": "Style dictionary definition exporter",
     "author": "Jiri Trecak",
     "organization": "Supernova",
