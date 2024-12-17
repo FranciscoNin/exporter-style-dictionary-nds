@@ -468,7 +468,9 @@ function safeTokenName(token: Token) {
  * For example, ST&RK Industries will be changed to st-rk-industries
  */
 function safeGroupName(group: TokenGroup) {
-  return group.name.replace(/\W+/g, "-").toLowerCase()
+  const name = group.name.replace(/\W+/g, "-").toLowerCase();
+  const pattern = /^\d+\.0$/;
+  return pattern.test(name) ? name : "";
 }
 
 /** Retrieve human-readable token type in unified fashion, used both as token type and as token master group */
